@@ -29,7 +29,7 @@
                 $("#top-3-message").html('<h3 class="notice warning">You\'ve selected your top 3. Unselect an option first.</h3>');
             } else {
                 if(checkGroup == 3){
-                    $("#top-3-message").html('<h3 class="notice valid">Great! Click the \'Get Matched\' button to continue.</h3>');
+                    $("#top-3-message").html('<h3 class="notice valid">Great! Click the <span class="amt">\'Get Matched\'</span> button to continue.</h3>');
                 } else {
                     $("#top-3-message").html('<h3 class="notice valid">Choose up to <span class="amt">' + ( 3 - checkGroup ) + '</span> more interests.</h3>');
                 }

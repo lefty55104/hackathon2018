@@ -109,9 +109,6 @@ h3 {
 .form-notification .warning {
     color: #c53b18;
 }
-.form-notification .valid {
-    color: #318135;
-}
 
 .input-wrapper {
     display: grid;
