@@ -33,7 +33,7 @@
             <div id="get-started" class="area-wrapper">
                 <h3 id="top-3-message" class="form-notification area-title">Start by selecting your top <span class="amt">3</span> interests</h3>
 
-                <form id="register-interests" action="register-activist.php" method="POST">
+                <form id="register-interests" action="forms/register-activist.php" method="POST">
 
                     <div class="input-wrapper">
 
