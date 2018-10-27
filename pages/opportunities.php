@@ -11,3 +11,6 @@ $res = $client->request('GET', 'https://hackicims.com/api/v1/companies/72/jobs',
 ]);
 
 $data = json_decode($res->getBody());
+
+
+"INSERT INTO opportunity(ID, Title"

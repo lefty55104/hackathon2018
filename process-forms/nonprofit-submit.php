@@ -7,10 +7,10 @@ if ($_SERVER['REQUEST_METHOD'] != 'POST') {
     die();
 }
 
-$servername = "localhost";
-$username = "username";
-$password = "password";
-$dbname = "myDB";
+$servername = "sopact-db.c0enhg7bdhdx.us-east-2.rds.amazonaws.com";
+$username = "SOPACT_ADMIN";
+$password = "SO_HACK102718";
+$dbname = "users";
 
 $organization_name = $_POST['organization_name'];
 
@@ -35,6 +35,9 @@ $interest3 = "";
 
 $soPact_sql = "INSERT INTO Users (ID, LastName, FirstName, eMail, Interest1, Interest2, Interest3)
 VALUES ($id, $lastName, $firstName, $email, $interest1, $interest2, $interest3)";
+
+"INSERT INTO nonprofits(ID,OrganizationName, Category)"
+
 
 $result = $conn->query($soPact_sql);
 

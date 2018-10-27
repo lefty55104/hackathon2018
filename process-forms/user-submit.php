@@ -34,11 +34,10 @@ $interest1 = "";
 $interest2 = "";
 $interest3 = "";
 
-$soPact_sql = "INSERT INTO Users (ID, LastName, FirstName, eMail, Interest1, Interest2, Interest3)
+$soPact_sql = "INSERT INTO users (ID, LastName, FirstName, eMail, Interest1, Interest2, Interest3)
 VALUES ($id, $lastName, $firstName, $email, $interest1, $interest2, $interest3)";
 
 $result = $conn->query($soPact_sql);
-
 
 
 ?>
