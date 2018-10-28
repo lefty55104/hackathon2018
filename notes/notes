@@ -24,3 +24,20 @@ $res = $client->request('GET', 'https://hackicims.com/api/v1/comanies/72/jobs', 
 $data = json_decode($res->getBody()); ?>
 
 for each data as index job 
+
+
+
+
+dashboard / report for… 
+ideas for …
+game out of … 
+timeline of …
+chart of …
+
+six degrees of separation for social good
+find your social cause
+
+AWS / serverless
+JSON requests from front end
+
+php -s filename.php

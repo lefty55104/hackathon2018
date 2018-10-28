@@ -34,6 +34,7 @@
                     $("#top-3-message").html('<h3 class="notice valid">Choose up to <span class="amt">' + ( 3 - checkGroup ) + '</span> more interests.</h3>');
                 }
             }
+            if(checkGroup > 3) checkGroup = 3;
         });
 
     });
