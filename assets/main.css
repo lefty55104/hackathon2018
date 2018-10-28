@@ -1,23 +1,29 @@
 html, body {
-    font-family: 'Open Sans', sans-serif;
-    color: #353e5f;
+    font-family: 'Lato', sans-serif;
+    color: #FFFFFF;
 
-    background: #fff7ee;
-    background: -webkit-linear-gradient(to right, #fff7ee, #efe1bb);
-    background: linear-gradient(to right, #fff7ee, #efe1bb);
+    background: linear-gradient(84deg, #780641, #ED941D);
     background-size: cover;
 
     margin: 0;
     min-height: 100vh;
 }
 
-h1 {
-    font-family: 'Bungee Inline', cursive;
+h2 {
     font-size: 50px;
+    margin-top: 0;
+    margin-bottom: 20px;
 }
 h3 {
-    font-family: 'Bungee Inline', cursive;
     font-size: 32px;
+}
+a {
+    color: #ffbe72;
+}
+
+.logo {
+    max-height: 250px;
+    width: auto;
 }
 
 .button {
@@ -27,11 +33,9 @@ h3 {
     font-weight: bold;
     text-decoration: none;
     text-transform: uppercase;
-    color: #353e5f;
+    color: #82143e;
 
-    background: #b4c5d8;
-    background: -webkit-linear-gradient(to bottom right, #d5dfea, #b4c5d8);
-    background: linear-gradient(to bottom right, #d5dfea, #b4c5d8);
+    background: linear-gradient(to bottom right, #ffffff, #c3c3c3);
 
     padding: 15px 25px;
     border-radius: 5px;
@@ -49,29 +53,14 @@ h3 {
     content: '';
     position: absolute;
     z-index: 1;
-    top: 0;
-    right: 0;
-    height: 350px;
-    width: 350px;
+    top: -10px;
+    right: -50px;
+    height: 400px;
+    width: 400px;
     background-image: url('top-right.png');
     background-repeat: no-repeat;
     background-size: contain;
-    background-repeat: no-repeat;
-    opacity: 0.2;
-}
-.header-wrapper:after {
-    content: '';
-    position: absolute;
-    z-index: 1;
-    bottom: 0;
-    left: 0;
-    height: 320px;
-    width: 320px;
-    background-image: url('bottom-left.png');
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-repeat: no-repeat;
-    opacity: 0.2;
+    opacity: 0.3;
 }
 .header-inner {
     flex: 1;
@@ -80,6 +69,7 @@ h3 {
     padding: 100px 25px 150px;
 }
 .header-wrapper p {
+    font-size: 21px;
     max-width: 500px;
     margin: 0 auto;
 }
@@ -87,12 +77,15 @@ h3 {
 .page-wrapper {
     padding: 25px;
 }
+.inner-page {
+    text-align: center;
+}
 
 .area-title {
     text-align: center;
 }
 .amt {
-    color: #90a3af;
+    color: #ffbe72;
 }
 
 .form-notification {
@@ -107,7 +100,7 @@ h3 {
     margin: 0;
 }
 .form-notification .warning {
-    color: #c53b18;
+    color: #ffbe72;
 }
 
 .input-wrapper {
@@ -116,9 +109,7 @@ h3 {
     grid-gap: 20px;
     align-items: center;
 
-    background: rgba(255,255,255,0.5);
-
-    padding: 20px;
+    padding: 40px;
 }
 
 .checkbox-wrapper input {
@@ -131,18 +122,19 @@ h3 {
 
     position: relative;
 
-    font-family: 'Bungee Inline', cursive;
     font-size: 22px;
+    font-weight: bold;
+    text-transform: uppercase;
     text-align: center;
+    color: #82143e;
 
-    background: #b4c5d8;
-    background: -webkit-linear-gradient(to bottom right, #d5dfea, #b4c5d8);
-    background: linear-gradient(to bottom right, #d5dfea, #b4c5d8);
+    background: linear-gradient(to bottom right, #ffffff, #c3c3c3);
 
     min-height: 80px;
 
     padding: 25px;
     border-radius: 10px;
+    cursor: pointer;
 }
 .label-for-check span {
     position: relative;
@@ -156,7 +148,7 @@ h3 {
 
     opacity: 0;
 
-    background: #b4c5d8;
+    background: #ffffff;
     border-radius: 10px;
 
     transition: opacity 300ms;
@@ -172,8 +164,32 @@ h3 {
 .input-box:checked + .label-for-check {
     font-weight: bold;
     color: #FFF;
-    background: #385f8a;
+    background: #ffbe72;
 }
 .input-box:checked + .label-for-check:hover:after {
     opacity: 0;
+}
+
+.submit-wrapper {
+    text-align: center;
+}
+.submit-wrapper input {
+    background: #82143e;
+    color: #FFFFFF;
+    border: 3px solid #FFFFFF;
+    -webkit-appearance: none;
+    padding: 15px 25px;
+    font-size: 18px;
+    border-radius: 5px;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.area-wrapper {
+    padding-top: 50px;
+}
+
+.inner-page label {
+    text-align: right;
 }
