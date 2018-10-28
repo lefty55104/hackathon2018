@@ -1,0 +1,26 @@
+composer init
+composer install
+php -S 0.0.0.0:9000
+
+mkdir simpact
+cd simpact/
+touch index.php
+composer init
+
+bolee/simpact
+guzzle
+0
+
+
+<?php
+require __DIR__ . '/vendor/autoload.php';
+$client = new GuzzleHttp\Client();
+$res = $client->request('GET', 'https://hackicims.com/api/v1/comanies/72/jobs', [
+    'headers' => [
+        'Authorization' => 'Bearer #####',
+    ]
+]);
+
+$data = json_decode($res->getBody()); ?>
+
+for each data as index job 
