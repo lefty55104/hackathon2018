@@ -8,6 +8,36 @@ define('DB_PASSWORD', 'SO_HACK102718');
 define('DB_DATABASE', 'SOPACT_ADMIN');
 // $link = mysqli_connect(DB_SERVER, DB_USERNAME, DB_PASSWORD, DB_DATABASE) or die(mysqli_error());
 
+// require '../vendor/autoload.php';
+// $client = new GuzzleHttp\Client();
+// $res = $client->request('POST', 'https://hackicims.com/api/v1/companies/72/people', [
+//     'headers' => [
+//         'Authorization' => 'Bearer f2db6c4321cea9e3d1fa4aa3d68c0b4adf6c317cdaa852500f63c50657c78e30fd7bac056a9dff6cc7035377f7015220fbfd6c368f6eb4fa6833c677c32a3e08',
+//         'Person-create' => 
+//         'lastName' =>   'test',
+//         'firstName' =>  'test',
+//         'email' => 'test@test.com' ,
+//         'address' => [
+// 	        'street' => 'test',
+// 	        'city' => 'test',
+// 	        'state' => 'test',
+// 			'zip' => '00000',
+// 			'country' => 'test'
+// 		],
+// 		'education' => [
+// 			['degree' => 'test',
+// 			'school' => 'test',
+// 			'major' => 'test',
+// 			'graduationDate' => 'test']
+// 		],
+// 		'skills' => [
+// 			['name'=> 'test',
+// 			'level' => 'test']
+//         ]
+//     ]
+// ]);
+// $data = json_decode($res->getBody());
+
 $lastName = $_POST['last_name'];
 $firstName = $_POST['first_name'];
 $email = $_POST['email'];
